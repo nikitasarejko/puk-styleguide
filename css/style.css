@@ -1,0 +1,262 @@
+@charset "UTF-8";
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Satoshi-Regular", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-kerning: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+  background-color: white;
+  color: #0e0906;
+  max-width: 192rem;
+  padding: 2.4rem;
+  margin: 0 auto;
+}
+
+.mb-xs {
+  margin-bottom: 0.8rem;
+}
+
+.mb-sm {
+  margin-bottom: 1.6rem;
+}
+
+.mb-md {
+  margin-bottom: 2.4rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mr-lg {
+  margin-right: 4rem;
+}
+
+div.container {
+  margin: 8rem 2.4rem;
+}
+div.cell {
+  margin-bottom: 8rem;
+}
+div.cell.w-50 {
+  max-width: 42rem;
+}
+div.cell.w-75 {
+  max-width: 80rem;
+}
+div.card {
+  cursor: pointer;
+}
+div.card-w100 {
+  display: flex;
+  align-items: center;
+}
+div.card-w100 div.card__img {
+  flex: 1 1 auto;
+}
+div.card-w100 div.card__content {
+  flex: 1 1 50%;
+  padding: 4.8rem;
+}
+div.card-w100 div.card__content p.headline-style-2 {
+  transition: color 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+}
+div.card-w100:hover p.headline-style-2 {
+  color: #2126e9;
+}
+div.card p.headline-style-3 {
+  transition: color 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+}
+div.card:hover p.headline-style-3 {
+  color: #2126e9;
+}
+div.card:hover div.card__img {
+  transform: scale(0.975);
+}
+div.card:hover img {
+  transform: scale(1.075);
+}
+div.card__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+div.card__img img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+div.card__facts {
+  display: flex;
+}
+
+p.label {
+  font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  color: #b5b0b5;
+}
+p.headline-style-1 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(2.887rem, 4.8vw, 6.583rem);
+  line-height: 1;
+}
+p.headline-style-2 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(2.281rem, 4vw, 4.11rem);
+  line-height: 1.2;
+}
+p.headline-style-3 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(2.027rem, 3.2vw, 3.247rem);
+  line-height: 1.25;
+}
+p.headline-style-4 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(2.027rem, 2.4vw, 2.566rem);
+  line-height: 1.45;
+}
+p.headline-style-5 {
+  font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.802rem, 2.4vw, 2.281rem);
+  line-height: 1.35;
+}
+p.headline-style-6 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.802rem, 2.1vw, 2.027rem);
+  line-height: 1.35;
+}
+p.headline-style-7 {
+  font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.125rem, 2.1vw, 1.266rem);
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+}
+p.text-style-1 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.424rem, 2.1vw, 1.602rem);
+  line-height: 1.625;
+}
+p.text-style-2 {
+  font-family: "Gambetta-Regular", sans-serif;
+  font-size: clamp(1.602rem, 2.1vw, 2.027rem);
+  line-height: 1.5;
+}
+p.text-style-3 {
+  font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.125rem, 1.8vw, 1.266rem);
+  line-height: 1.425;
+}
+p.text-style-4 {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.125rem, 1.8vw, 1.266rem);
+  line-height: 1.425;
+  letter-spacing: 0.15px;
+}
+p.color-magenta {
+  color: #e72267;
+}
+p.color-gray {
+  color: #b5b0b5;
+}
+
+button.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  padding: 2.4rem 4rem;
+  margin: 0.8rem 0;
+  font-family: inherit;
+  font-size: 1.424rem;
+  position: relative;
+  display: inline-block;
+}
+button.button::before, button.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+button.button-primary {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  border: 1px solid #0e0906;
+  border-radius: 4rem;
+  overflow: hidden;
+  color: #fff;
+}
+button.button-primary:hover::before {
+  transform: translate3d(0, -100%, 0);
+}
+button.button-primary::before {
+  content: "";
+  background: #0e0906;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+button.button-primary span {
+  position: relative;
+  mix-blend-mode: difference;
+}
+button.button-secondary {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  border: 1px solid #0e0906;
+  border-radius: 4rem;
+  overflow: hidden;
+  color: #fff;
+}
+button.button-secondary:hover::before {
+  transform: translate3d(0, 0, 0);
+}
+button.button-secondary::before {
+  content: "";
+  background: #0e0906;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+button.button-secondary span {
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+a.button {
+  font-size: 1.266rem;
+  font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+}
+a.button-tertiary {
+  transition: opacity 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+a.button-tertiary span {
+  margin-right: 0.5rem;
+}
+a.button-tertiary:hover {
+  opacity: 0.8;
+}
+a.button-tertiary:hover::after {
+  transform: translate(4px, -2px);
+}
+a.button-tertiary::after {
+  display: inline-block;
+  content: "›";
+  transform: translate(0, -2px);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+/*# sourceMappingURL=style.css.map */
