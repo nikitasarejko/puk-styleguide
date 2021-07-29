@@ -151,29 +151,29 @@ div {
           flex: 1 1 50%;
           padding: 4.8rem;
 
-          p.headline-style-2 {
+          p.text-style-2 {
             transition: color 0.4s cubic-bezier(0.77, 0, 0.18, 1);
           }
         }
       }
 
       &:hover {
-        p.headline-style-2 {
+        p.text-style-2 {
           color: $color-blue;
         }
       }
     }
 
-    p.headline-style-3 {
+    p.text-style-3 {
       transition: color 0.4s cubic-bezier(0.77, 0, 0.18, 1);
     }
 
     &:hover {
-      p.headline-style-3 {
+      p.text-style-3 {
         color: $color-blue;
       }
       div.card__img {
-        transform: scale(0.975);
+        transform: scale(0.985);
       }
       img {
         transform: scale(1.075);
@@ -183,14 +183,14 @@ div {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
       img {
         object-fit: cover;
         object-position: center center;
         width: 100%;
         height: 100%;
-        transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
     }
 
@@ -209,7 +209,7 @@ p {
     color: $color-gray;
   }
 
-  &.headline-style {
+  &.text-style {
     &-1 {
       font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial,
         sans-serif;
@@ -257,34 +257,25 @@ p {
       text-transform: uppercase;
       letter-spacing: 0.15px;
     }
-  }
 
-  &.text-style {
-    &-1 {
+    &-8 {
       font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial,
         sans-serif;
       font-size: clamp(1.424rem, 2.1vw, 1.602rem);
       line-height: 1.625;
     }
 
-    &-2 {
-      font-family: "Gambetta-Regular", sans-serif;
-      font-size: clamp(1.602rem, 2.1vw, 2.027rem);
-      line-height: 1.5;
-    }
-
-    &-3 {
+    &-9 {
       font-family: "Satoshi-Bold", Helvetica, Helvetica Neue, Arial, sans-serif;
       font-size: clamp(1.125rem, 1.8vw, 1.266rem);
       line-height: 1.425;
+      letter-spacing: 0.15px;
     }
 
-    &-4 {
-      font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial,
-        sans-serif;
-      font-size: clamp(1.125rem, 1.8vw, 1.266rem);
-      line-height: 1.425;
-      letter-spacing: 0.15px;
+    &-default {
+      font-family: "Gambetta-Regular", sans-serif;
+      font-size: clamp(1.602rem, 2.1vw, 2.027rem);
+      line-height: 1.5;
     }
   }
 
@@ -415,6 +406,32 @@ a {
       content: "\0203A";
       transform: translate(0, -2px);
       transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    }
+  }
+
+  &.link-regular {
+    font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-size: clamp(1.424rem, 2.1vw, 1.602rem);
+    color: $color-blue;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-black;
+    }
+  }
+
+  &.link-dark {
+    font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-size: clamp(1.424rem, 2.1vw, 1.602rem);
+    background: $color-black;
+    color: #fff;
+    transition: all 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-gray;
     }
   }
 }
