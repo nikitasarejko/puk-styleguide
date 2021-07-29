@@ -42,11 +42,68 @@ body {
   margin-right: 4rem;
 }
 
+nav {
+  display: inline-block;
+}
+nav:hover a {
+  opacity: 0.3;
+}
+nav a {
+  display: inline-block;
+  margin-right: 2.4rem;
+  padding-bottom: 0.8rem;
+  text-decoration: none;
+  color: #0e0906;
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: clamp(1.424rem, 2.1vw, 1.602rem);
+  line-height: 1;
+  transition: 0.2s ease;
+}
+nav a.active {
+  border-bottom: 1px solid #0e0906;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+nav a:hover {
+  opacity: 1;
+}
+
 div.container {
   margin: 8rem 2.4rem;
 }
 div.cell {
   margin-bottom: 8rem;
+}
+div.cell-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+div.cell-grid div.color {
+  width: 100%;
+  height: 0%;
+  padding-bottom: 100%;
+  margin-bottom: 0.8rem;
+}
+div.cell-grid div.black {
+  background: #0e0906;
+}
+div.cell-grid div.magenta {
+  background: #e72267;
+}
+div.cell-grid div.blue {
+  background: #2126e9;
+}
+div.cell-grid div.gray-dark {
+  background: #b5b0b5;
+}
+div.cell-grid div.gray-medium {
+  background: #e1dfe1;
+}
+div.cell-grid div.gray-light {
+  background: #f6f5f6;
 }
 div.cell.w-50 {
   max-width: 42rem;
@@ -231,6 +288,20 @@ button.button-secondary::before {
 button.button-secondary span {
   position: relative;
   mix-blend-mode: difference;
+}
+button.button-quaternary {
+  font-family: "Satoshi-Medium", Helvetica, Helvetica Neue, Arial, sans-serif;
+  border: none;
+  overflow: hidden;
+  font-size: 1.266rem;
+  line-height: 1;
+  color: #2126e9;
+  background: rgba(33, 38, 233, 0.1);
+  padding: 0.8rem;
+  transition: background 0.1s ease-in;
+}
+button.button-quaternary:hover {
+  background: rgba(33, 38, 233, 0.175);
 }
 
 a.button {
